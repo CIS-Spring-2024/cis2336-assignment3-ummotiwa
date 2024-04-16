@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Cost Calculator and Order Wizard">
+	<meta name="author" content="UWS">
+	<title>NourishNook Cafe</title>
+
+	<!-- Favicon -->
+	<link href="img/favicon.png" rel="shortcut icon">
+
+	<!-- Google Fonts - Poppins, Karla -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:300,400,500,600,700" rel="stylesheet">
+
+	<!-- Font Awesome CSS -->
+	<link href="../js/fontawesome/css/all.min.css" rel="stylesheet">
+
+	<!-- Custom Font Icons -->
+	<link href="../js/icomoon/css/iconfont.min.css" rel="stylesheet">
+
+	<!-- ../js CSS -->
+	<link href="../js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../js/animate/css/animate.min.css" rel="stylesheet">
+	<link href="../js/dmenu/css/menu.css" rel="stylesheet">
+	<link href="../js/hamburgers/css/hamburgers.min.css" rel="stylesheet">
+	<link href="../js/mmenu/css/mmenu.min.css" rel="stylesheet">
+	<link href="../js/range-slider/css/ion.rangeSlider.css" rel="stylesheet">
+	<link href="../js/magnific-popup/css/magnific-popup.css" rel="stylesheet">
+	<link href="../js/float-labels/css/float-labels.min.css" rel="stylesheet">
+
+	<!-- Main CSS -->
+	<link href="../CSS folder/order.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Page -->
+	<div id="page">
+		<!-- Header -->
+		<header class="main-header sticky">
+			<a href="#menu" class="btn-mobile">
+				<div class="hamburger hamburger--spin" id="hamburger">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</a>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-6">
+						<div id="logo">
+							<h1><a href="index.html" title="Costy">NourishNook Cafe</a></h1>
+						</div>
+					</div>
+					<div class="col-lg-9 col-6">
+						
+						<!-- Menu -->
+						<nav id="menu" class="main-menu">
+							<ul>
+								<li><span><a href="index.html">Home</a></span></li>
+								
+								
+								<li><span><a href="faq.html">Faq</a></span></li>
+								<li><span><a href="about.html">About</a></span></li>
+							</ul>
+						</nav>
+						<!-- Menu End -->
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header End -->
+
+		<main>
+			<!-- Order  -->
+			<div class="order">
+				<div class="container">
+					<!-- Form -->
+					<form method="POST" id="orderForm" name="orderForm" action="#">
+						<div class="row">
+							<div class="col-lg-8" id="mainContent">
+								<!-- Calculator Area -->
+								<div id="optionGroup1" class="row option-box">
+									<div class="price-box"><sup>$</sup>25.64</div>
+									<div class="option-box-header">
+										<h3>Muffin</h3>
+										<p>
+											Sweat muffin with chocolate chips.
+											<a href="javascript:;" id="openImage1" class="option-box-link">Image</a>
+										</p>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<input type="hidden" id="option1Title" name="option1Title" value="Single Option 1" />
+										<input type="hidden" id="option1Price" name="option1Price" value="0" />
+										<input type="checkbox" id="option1Single" class="inp-cbx" name="option1Single" value="25.64" />
+										<label class="cbx" for="option1Single">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+											<span id="option1SingleTitle">Add to Cart</span>
+										</label>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="row">
+											<div class="col-8">
+												<input id="option1SingleRangeSlider" type="text" value="" />
+											</div>
+											<div class="col-4">
+												<input id="option1SingleQty" type="text" class="qty-input form-control" name="optionGroup1Qty" value="0" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="optionGroup2" class="row option-box">
+									<div class="ribbon-left"><span class="left">Popular</span></div>
+									<div class="price-box"><sup>$</sup>103.63</div>
+									<div class="option-box-header">
+										<h3>Tuna Fries</h3>
+										<p>
+											Deep fried tuna with fries.
+											<a href="javascript:;" id="openImage3" class="option-box-link">Image</a>
+										</p>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<input type="hidden" id="option2Title" name="option2Title" value="Single Option 2" />
+										<input type="hidden" id="option2Price" name="option2Price" value="0" />
+										<input type="checkbox" id="option2Single" class="inp-cbx" name="option2Single" value="103.63" />
+										<label class="cbx" for="option2Single">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+											<span id="option2SingleTitle">Add to Cart</span>
+										</label>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="row">
+											<div class="col-8">
+												<input id="option2SingleRangeSlider" type="text" value="" />
+											</div>
+											<div class="col-4">
+												<input id="option2SingleQty" type="text" class="qty-input form-control" name="optionGroup2Qty" value="0" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="optionGroup3" class="row option-box">
+									<div class="price-box"><sup>$</sup>10.75</div>
+									<div class="option-box-header">
+										<h3>Outmeal</h3>
+										<p>Amazing cooked meal.</p>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<input type="hidden" id="option3Title" name="option3Title" value="Single Option 3" />
+										<input type="hidden" id="option3Price" name="option3Price" value="0" />
+										<input type="checkbox" id="option3Single" class="inp-cbx" name="option3Single" value="10.75" />
+										<label class="cbx" for="option3Single">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+											<span id="option3SingleTitle">Add to Cart</span>
+										</label>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="row">
+											<div class="col-8">
+												<input id="option3SingleRangeSlider" type="text" value="" />
+											</div>
+											<div class="col-4">
+												<input id="option3SingleQty" type="text" class="qty-input form-control" name="optionGroup3Qty" value="0" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="extraOptionGroup1" class="row option-box">
+									<div class="price-box"><sup>$</sup>50</div>
+									<div class="option-box-header">
+										<h3>Cookies</h3>
+										<p>Cookies toppings</p>
+									</div>
+									<div class="col-md-12 col-sm-12">
+										<input type="hidden" name="extraOption1Title" value="Extra Option 1" />
+										<input type="checkbox" id="extraOption1" class="inp-cbx" name="extraOption1" value="50.00" />
+										<label class="cbx" for="extraOption1">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+											<span id="extraOption1Title">Add to Cart</span>
+										</label>
+									</div>
+								</div>
+								<div id="extraOptionGroup2" class="row option-box">
+									<div class="price-box"><sup>$</sup>70</div>
+									<div class="option-box-header">
+										<h3>
+                                            Salted Caramel
+                                        </h3>
+										<p>
+                                            Salted caramel toppings.
+                                        </p>
+									</div>
+									<div class="col-md-12 col-sm-12">
+										<input type="hidden" name="extraOption2Title" value="Extra Option 2" />
+										<input type="checkbox" id="extraOption2" class="inp-cbx" name="extraOption2" value="70.00" />
+										<label class="cbx" for="extraOption2">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+											<span id="extraOption2Title">Add to Cart</span>
+										</label>
+									</div>
+								</div>
+								<!-- Calculator Area End -->
+								<!-- Personal Details -->
+								<div id="personalDetails" class="row contact-box">
+									<div class="contact-box-header">
+										<h3>Contact Details</h3>
+										<p>Please give VALID email to check the result.</p>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label for="userName">Full Name</label>
+											<input id="userName" class="form-control" name="username" type="text" data-parsley-pattern="^[a-zA-Z\s.]+$" required />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label for="email">Email</label>
+											<input id="email" class="form-control" name="email" type="email" required />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label for="phone">Phone e.g.: +12345</label>
+											<input id="phone" class="form-control" name="phone" type="text" data-parsley-pattern="^\+{1}[0-9]+$" />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="form-group">
+											<label for="address">Address</label>
+											<input id="address" class="form-control" name="address" type="text" data-parsley-pattern="^[,.a-zA-Z0-9\s.]+$" />
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="inputMessage">Message</label>
+											<textarea class="form-control" id="inputMessage" name="message" data-parsley-pattern="^[a-zA-Z0-9\s.:,!?']+$"></textarea>
+										</div>
+									</div>
+								</div>
+								<!-- Personal Details End -->
+							</div>
+							<div class="col-lg-4" id="sidebar">
+								<!-- Order Container -->
+								<div id="orderContainer" class="theiaStickySidebar">
+									<div class="row">
+										<div class="col-md-12">
+											<input type="hidden" id="subSum1" name="subSum1" value="0" />
+											<input type="hidden" id="subSum2" name="subSum2" value="0" />
+											<input type="hidden" id="subSum3" name="subSum3" value="0" />
+											<input type="hidden" id="totalDue" name="totalDue" value="0" />
+											<h3>Order Summary</h3>
+											<ul id="orderSumList">
+												<li id="option1SingleSum"></li>
+												<li id="option2SingleSum"></li>
+												<li id="option3SingleSum"></li>
+												<li id="extraOption1Sum"></li>
+												<li id="extraOption2Sum"></li>
+											</ul>
+											<div class="row total-container">
+												<div class="col-6 p-0">
+													<input type="text" id="totalTitle" class="summaryInput" name="totallabel" value="" disabled />
+												</div>
+												<div class="col-6 p-0">
+													<input type="text" id="total" class="summaryInput" name="total" value="0" data-parsley-errors-container="#totalError" data-parsley-empty-order=""
+														disabled />
+												</div>
+											</div>
+											<div id="totalError"></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="checkbox" id="cbx" class="inp-cbx" name="terms" value="yes" required />
+												<label class="cbx terms" for="cbx">
+													<span>
+														<svg width="12px" height="10px" viewbox="0 0 12 10">
+															<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+														</svg>
+													</span>
+													<span>Accept<a href="pdf/terms.pdf" class="terms-link" target="_blank">Terms</a>.</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button type="submit" name="submit" class="btn-form-func">
+												<span class="btn-form-func-content">SUBMIT</span>
+												<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+											</button>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button type="button" name="reset" id="resetBtn" class="btn-form-func btn-form-func-alt-color">
+												<span class="btn-form-func-content">RESET</span>
+												<span class="icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+											</button>
+										</div>
+									</div>
+									<div class="row footer">
+										<div class="col-lg-12 text-center">
+											<small>&copy; 2024 NourishNook Cafe.</small>
+										</div>
+									</div>
+								</div>
+								<!-- Order Container End -->
+							</div>
+						</div>
+					</form>
+					<!-- Form End -->
+				</div>
+			</div>
+			<!-- Order End -->
+		</main>
+		<!-- Main End -->
+	</div>
+	<!-- Page End -->
+
+	<!-- Back to top button -->
+	<div id="toTop"><i class="fa fa-chevron-up"></i></div>
+
+	<!-- ../js Javascript Files -->
+	<script src="../js/jquery/jquery.min.js"></script>
+	<script src="../js/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../js/easing/js/easing.min.js"></script>
+	<script src="../js/parsley/js/parsley.min.js"></script>
+	<script src="../js/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="../js/range-slider/js/ion.rangeSlider.min.js"></script>
+	<script src="../js/price-format/js/jquery.priceformat.min.js"></script>
+	<script src="../js/theia-sticky-sidebar/js/ResizeSensor.min.js"></script>
+	<script src="../js/theia-sticky-sidebar/js/theia-sticky-sidebar.min.js"></script>
+	<script src="../js/mmenu/js/mmenu.min.js"></script>
+	<script src="../js/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+	<script src="../js/float-labels/js/float-labels.min.js"></script>
+
+	<!-- Main Javascript File -->
+	<script src="../js/scripts-2.js"></script>
+
+</body>
+
+</html>
